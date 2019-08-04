@@ -1,5 +1,4 @@
 # ABOUT
-(Copied from imjs's GitHub intro)
 This library abstracts the functionality of InterMine's web service layer. It is meant for those wishing to build in communication layers to intermine servers, build graphical widgets on top of the webservice APIs, or perform client side scripting.
 
 The purpose of this library is to expose a uniform interface to the web-service API for both node.js and browser based programming, wrapping some of the minor unpleasantness of dealing with raw HTTP requests, as well as the more major issue of dealing with the path-query format, which is complex.
@@ -7,7 +6,7 @@ The purpose of this library is to expose a uniform interface to the web-service 
 # INSTALLING
 
 ## Prerequisites
- - Node.js (version??) (assuming you want to build from latest source or contribute)
+ - Node.js (preferrably 6.10.2 or greater) (assuming you want to build from latest source or contribute)
 
 ### Using NPM
 Assuming that Node.js is already installed, run `npm init` to create `package.json` for your application in the valid directory, in case it is not already created. Make sure that your current working directory is the same containing `package.json`, and run the following command. It adds `imjs` to the dependency list.
