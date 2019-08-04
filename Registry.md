@@ -1,5 +1,4 @@
 # REGISTRY
-(Usage to be extended after adding the desired functionality)
 
 ## INTRODUCTION
 Registry is an abstraction of connection between the client and the intermine registry (http://registry.intermine.org/service/) RESTful API. It provides the required functionality to access public endpoints of the registry easily, along with providing required error handling.
