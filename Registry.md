@@ -24,6 +24,6 @@ registry.fetchInstance('flymine').then(instance => {
 //Fetch a namespace associated with a given url
 registry.fetchNamespace('www.flymine.org').then(namespace => {
 	console.log(namespace)
-	// Do something with the namespace
+	// Do something with the namespace obtained
 })
 ```

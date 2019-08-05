@@ -31,4 +31,32 @@ flymine.fetchList('UseCase5_backgroundGeneList').then(list => {
     // An array of contents present in the list is displayed
     contentArr.forEach(console.log)
 })
+
+// Lists can be created through the a) Query saving mechanism and b) List upload mechanism
+
+// Saving lists using Query saving mechanism
+flymine.query({
+    ...
+}).then(q => {
+    q.saveAsList({
+        name: 'new_list',
+        tags: ['test-list', 'other-tags', ...]
+    })
+})
+
+// Saving lists using List upload mechanism
+//'type' parameter denotes the type of objects these are identifiers of
+flymine.createList(
+    // Options array, providing information about the list
+    {
+        name: 'new_list_2',                                     //required
+        type: 'Gene',                                           //required
+        description: 'Demonstrating list upload mechanism',     //optional
+        extraValue: 'To disambiguate between different lists'   //optional
+    },
+    // Provide identifiers to include in the list
+    [
+        ...
+    ]
+)
 ```

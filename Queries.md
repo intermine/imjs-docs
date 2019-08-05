@@ -23,6 +23,3 @@ flymine.templateQuery('GO_Gene').then(query => {
 	console.log(query.model.name);
 })
 ```
-
-## SAVED QUERIES
-
