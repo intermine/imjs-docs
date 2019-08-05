@@ -1,7 +1,27 @@
 # QUERYING THE INTERMINE
 
-## SAMPLE QUERIES
-(Fill this space using some queries with real use cases)
+## SAMPLE QUERY
+Following query shows the genes located on a particular chromosome of D. melanogaster
+```
+// Create a new Service adapter
+const intermine = require('imjs');
+const flymine = new intermine.Service({ root: 'www.flymine.org/query' })
+flymine.rows({
+	from: 'Gene',
+	select: [
+		'Gene.chromosome.primaryIdentifer',
+		'Gene.organism.name'
+	]
+	where: [
+		['Gene.chromosome.primaryIdentifier', '=', '2L'],
+		['Gene.organism.name', '=', 'Drosophila melanogaster']
+	]
+}).then(result => {
+	// Do something with the result
+}).catch(err => {
+	// Error handling goes here
+})
+```
 
 ## TEMPLATE QUERIES
 Template is a pre-defined query, that allows you to search the database without having to construct your own query or understanding underlying data structure. Templates generally represent some common use case scenario of the mine.
