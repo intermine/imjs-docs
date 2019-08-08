@@ -3,7 +3,7 @@
 Lists are representations of collections of objects stored on the server
 
 ## USAGE
-```
+```javascript
 // Create a new Service adapter
 const intermine = require('imjs');
 const flymine = new intermine.Service({ root: 'www.flymine.org/query' })
