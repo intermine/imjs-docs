@@ -2,7 +2,7 @@
 
 ## SAMPLE QUERY
 Following query shows the genes located on a particular chromosome of D. melanogaster
-```
+```javascript
 // Create a new Service adapter
 const intermine = require('imjs');
 const flymine = new intermine.Service({ root: 'www.flymine.org/query' })
@@ -26,7 +26,7 @@ flymine.rows({
 ## TEMPLATE QUERIES
 Template is a pre-defined query, that allows you to search the database without having to construct your own query or understanding underlying data structure. Templates generally represent some common use case scenario of the mine.
 
-```
+```javascript
 // Create a new Service adapter
 const intermine = require('imjs');
 const flymine = new intermine.Service({ root: 'www.flymine.org/query' })
