@@ -3,7 +3,7 @@
 In order to access user specific functionality of InterMine like fetching private lists or uploading lists, one must be connected to the specific mine instance as an authenticated user
 
 ## AUTHENTICATED SERVICE
-```
+```javascript
 const intermine = require('imjs')
 // To create an authenticated service class
 const authenticatedFlymine = new intermine.Service({
@@ -21,7 +21,7 @@ authenticatedFlymine = unauthenticatedFlymine.connectAs(token)
 ## USER METHOD 
 `imjs` also provides `User` class to represent the authenticated user's profile information and manipulate it
 
-```
+```javascript
 const intermine = require('imjs')
 const flymine = new intermine.Service({
     root: 'www.flymine.org/query'
