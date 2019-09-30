@@ -21,10 +21,10 @@ const intermine = require('imjs');
 ### Using CDN
 Add the following `script` tag to the HTML file before using any of the `imjs` functionality.
 ```
-<script src="https://cdn.rawgit.com/intermine/CDN/feb5bb77/js/intermine/imjs/3.15.0/im.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/intermine/CDN@feb5bb77caa5f1f6c44bd15f4f132de385294c2c/js/intermine/imjs/3.15.0/im.js"></script>
 
 <!-- For the minified version-->
-<script src="https://cdn.rawgit.com/intermine/CDN/feb5bb77/js/intermine/imjs/3.15.0/im.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/intermine/CDN@feb5bb77caa5f1f6c44bd15f4f132de385294c2c/js/intermine/imjs/3.15.0/im.min.js"></script>
 
 <!-- The library and its functionality will be imported as the global variable, imjs-->
 ```
