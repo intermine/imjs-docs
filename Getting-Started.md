@@ -14,7 +14,7 @@ Assuming that Node.js is already installed, run `npm init` to create `package.js
 npm install imjs --save
 ```
 To import the library and use it in the script files, add the following line of code at the top of the file, along with other imports (if any).
-```
+```javascript
 const intermine = require('imjs');
 ```
 
