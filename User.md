@@ -18,7 +18,7 @@ token = ...     // Token used to authorize the flymine
 authenticatedFlymine = unauthenticatedFlymine.connectAs(token)
 ```
 
-## USER METHOD 
+## USER METHOD
 `imjs` also provides `User` class to represent the authenticated user's profile information and manipulate it
 
 ```javascript
