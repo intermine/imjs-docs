@@ -10,17 +10,17 @@ The purpose of this library is to expose a uniform interface to the web-service 
 
 ### Using NPM
 Assuming that Node.js is already installed, run `npm init` to create `package.json` for your application in the valid directory, in case it is not already created. Make sure that your current working directory is the same containing `package.json`, and run the following command. It adds `imjs` to the dependency list.
-```
+```bash
 npm install imjs --save
 ```
 To import the library and use it in the script files, add the following line of code at the top of the file, along with other imports (if any).
-```
+```javascript
 const intermine = require('imjs');
 ```
 
 ### Using CDN
 Add the following `script` tag to the HTML file before using any of the `imjs` functionality.
-```
+```html
 <script src="https://cdn.rawgit.com/intermine/CDN/feb5bb77/js/intermine/imjs/3.15.0/im.js"></script>
 
 <!-- For the minified version-->
@@ -32,7 +32,7 @@ Add the following `script` tag to the HTML file before using any of the `imjs` f
 
 ### Building from the source
 _NOTE: Use this only if you are sure of what you are doing. Latest version of imjs might not be always stable._
-```
+```bash
 $ git clone https://github.com/intermine/imjs
 $ cd imjs
 $ npm install
